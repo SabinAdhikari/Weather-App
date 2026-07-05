@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather App</title>
+    <title>Weather App</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button aria-label="Search city"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
         <div class="weather">
-            <img src="images/Rain.png" class="WeatherIcon">
-            <h1 class="temp">22°C</h1>
+            <img src="images/Rain.png" class="WeatherIcon" alt="Rainy weather">
+            <h1 class="temp">22&deg;C</h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
-                    <img src="images/Humidity.png" alt="HumidityIcon">
+                    <img src="images/Humidity.png" alt="Humidity">
                     <div>
                         <p class="Humidity">50%</p>
                         <p>Humidity</p>
-                </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="images/Wind.png" alt="HumidityIcon">
+                    <img src="images/Wind.png" alt="Wind">
                     <div>
                         <p class="Wind">15 km/h</p>
                         <p>Wind Speed</p>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>

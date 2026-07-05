@@ -111,27 +111,29 @@ body{
     font-size: 18px;
 }
 
-.temp, .city{
-    font-size: 25px;
-    font-weight: 800;
+.weather{
+    padding-top: 26px;
 }
 
-.WeatherIcon{
-    width: min(46vw, 178px);
-    margin-top: 32px;
+.Weather-Icon{
+    width: min(45vw, 160px);
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin: 0 auto 12px;
+    display: block;
     filter: drop-shadow(0 18px 22px rgba(13, 25, 54, 0.26));
 }
 
 .weather h1{
-    font-size: 78px;
+    font-size: clamp(58px, 16vw, 78px);
     line-height: 1;
     font-weight: 700;
-    margin-top: 4px;
+    margin-top: 0;
     letter-spacing: 0;
 }
 
 .weather h2{
-    font-size: 36px;
+    font-size: clamp(28px, 8vw, 36px);
     line-height: 1.15;
     font-weight: 700;
     margin-top: 8px;
@@ -204,12 +206,12 @@ body{
         width: 52px;
     }
 
-    .weather h1{
-        font-size: 62px;
+    .weather{
+        padding-top: 22px;
     }
 
-    .weather h2{
-        font-size: 30px;
+    .Weather-Icon{
+        width: min(52vw, 142px);
     }
 
     .details{
@@ -217,4 +219,16 @@ body{
         align-items: stretch;
         margin-top: 28px;
     }
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
 }
